@@ -1,4 +1,4 @@
-#Thorium
+#Thorium Chandan Gupta 
 
 ## Project - Products Management
 
