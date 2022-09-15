@@ -7,6 +7,7 @@ const orderController = require('../controller/orderController');
 const authenticate = require('../middleware/authentication');
 const authorize = require('../middleware/authorization');
 
+// effective routing 
 
 // User Api
 router.post('/register', userController.registerUser);
