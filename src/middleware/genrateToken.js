@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken")
 
 
-
+//generate token 
 const generateToken = async function (user) {
     try {
 

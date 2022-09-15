@@ -7,7 +7,7 @@ const bcrypt=require("bcrypt")
 saltRounds=10;
 
 
-
+//12
 const createProduct = async function (req, res) {
     try {
         const requestBody = req.body;

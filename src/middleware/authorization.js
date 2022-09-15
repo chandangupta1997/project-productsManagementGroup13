@@ -2,7 +2,7 @@ const validator = require("../validator/Validator")
 const userModel = require("../models/userModel")
 
 
-
+//authorization 
 
 const authorization = async function (req, res, next) {
 
