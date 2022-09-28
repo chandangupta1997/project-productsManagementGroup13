@@ -4,7 +4,13 @@ const userController = require('../controller/userController');
 const productController = require('../controller/productController');
 const cartController = require('../controller/cartController');
 const orderController = require('../controller/orderController');
+
+
+const paymentController = require('../controller/paymentController')
 const authenticate = require('../middleware/authentication');
+
+
+
 const authorize = require('../middleware/authorization');
 
 // effective routing 
@@ -28,5 +34,13 @@ router.delete('/users/:userId/cart',authenticate.authentication,authorize.author
 // order api
 router.post('/users/:userId/orders', orderController.createOrder);
 router.put('/users/:userId/orders', orderController.updateOrder);
+
+
+
+
+// payment gateway intgration 
+router.post('/users/:userId/:orderID',paymentController.makePayment)
+router.get('/users/:userId/:orderID',paymentController.verifyPayment)
+
 
 module.exports = router;
