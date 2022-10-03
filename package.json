@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aws-sdk": "^2.1111.0",
+    "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
     "currency-symbol": "^1.0.6",
     "currency-symbol-map": "^5.0.1",

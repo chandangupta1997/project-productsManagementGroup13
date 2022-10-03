@@ -1,5 +1,5 @@
 
-
+const axios = require('axios')
 const paymentModel = require('../models/paymentModel')
 
 const orderModel =require('../models/orderModel')
@@ -21,6 +21,12 @@ const makePayment = async function(req,res){
 
     // will be making axios call to the backend server 
     // Stripe Payments 
+
+    let options = {
+        method: 'post',
+        url: `https://localhost:5000/payment?amount=${orderAmount}` // our stripe payments 
+    }
+    let result = await axios(options);
 
     
 

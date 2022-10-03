@@ -30,6 +30,9 @@ app.get('/', function(req, res){
 //*******************************stripe post ******************************* */
 app.post('/payment', function(req, res){ 
 
+    // accesing payment 
+    let amount = req.query.amount
+
     // Moreover you can take more details from user 
     // like Address, Name, etc from form 
 
@@ -37,10 +40,10 @@ app.post('/payment', function(req, res){
     stripe.customers.create({ 
         email: req.body.stripeEmail, 
         source: req.body.stripeToken, 
-        name: 'Gautam Sharma',  // yha post request se jo aaega wo likhenge  schema type thing 
+        name: 'Chandan Gupta ',  // yha post request se jo aaega wo likhenge  schema type thing 
         address: { 
             line1: 'TC 9/4 Old MES colony', 
-            postal_code: '110092', 
+            postal_code: '110063', 
             city: 'New Delhi', 
             state: 'Delhi', 
             country: 'India', 
