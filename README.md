@@ -11,7 +11,7 @@ SKill Set : -JS,NodeJS,AWS(S3Bucket),Reddis(For Caching),MongoDB
 ## INSTALLATION 
 go to the main Folder 
 1) npm install
-2) run src/index.js
+2) run i.e node src/index.js
 3) you can replace mongoDbString from your local or another mongoDB Compass string 
 
 
